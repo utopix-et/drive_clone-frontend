@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import illust from '../assets/images/illust.svg';
-import logo from '../assets/images/logo.png';
 import './Login.css';
 
 export default function Login() {
