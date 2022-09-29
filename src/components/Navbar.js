@@ -1,45 +1,29 @@
-import React from "react";
+import React, { useState } from 'react';
+import Logo from '../assets/images/logo.png';
 
-export const Navbar = () => {
-    return(
+export const  Navbar = () => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
-        <div className="container">
-            
-            <div className='row border-bottom border-secondary pb-3 bg-dark'>
-                <div className='col-12 col-md-8 bg-white'>
-                    <h1 className='text-secondary' style={{fontSize:'20px'}}>DRIVE 
-                    <span style={{color:'#FF8800'}}> CLONE </span>
-                </h1>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                </div>
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
-                <div className='col-12 col-md-4 bg-primary collapse navbar-collapse' id="navbarNav">
-                    <button type='submit' className='border-0 bg-white text-secondary'>Login</button>
-                    <span className='px-2'>|</span>  
-                    <button type='submit' className='d-inline border-0 rounded py-1 text-white' style={{backgroundColor:'#FF8800'}}>Signup</button>
-                </div>
-            </div>
+  return (
+    <nav class="navbar container navbar-expand-lg navbar-light border-bottom border-secondary pb-3">
+    <div className='col-8 w-75'>
+      <img src={Logo} alt="logo" className="img-fluid ms-3 mt-3" style={{width:'150px'}}/>
+    </div> 
+      
+      <button class="custom-toggler navbar-toggler w-25 border-0 mt-3" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
+        <span class="navbar-toggler-icon border-none"></span>
+      </button>
 
+      <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse w-25 mt-4`} id="navbarsExample09">
+          <div className='w-100 text-center'>
+           <a type='submit' className='text-decoration-none text-secondary'>Login</a>
+           </div>
+           <div className='w-100 text-center btn border-none rounded' style={{backgroundColor:'#FF8800'}}>
+           <a type='submit' className='text-white text-decoration-none' >Signup</a>
         </div>
-    );
+        </div>
+    </nav>
+  );
 }
-    /*
-    <div className='container bg-white mt-4'>
-           
-    <div className='row border-bottom border-secondary pb-3'>
-        <div className='col-12 col-md-8 bg-dark'>
-            <h1 className='text-secondary' style={{fontSize:'20px'}}>DRIVE 
-                <span style={{color:'#FF8800'}}> CLONE </span>
-            </h1>
-        </div>
-        <div className='col-12 col-md-4 d-block'>
-           <button type='submit' className='border-0 bg-white text-secondary'>Login</button>
-           <span className='px-2'>|</span>  
-           <button type='submit' className='d-inline border-0 rounded py-1 text-white' style={{backgroundColor:'#FF8800'}}>Signup</button>
-        </div>
-    </div>
-    </div>
-    );  
-    }*/

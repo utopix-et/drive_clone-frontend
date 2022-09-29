@@ -47,14 +47,7 @@ export default function Login() {
 
             </div>
 
-            <div className="row bg-black text-white">
-        <p>
-            default email: <span className='text-primary'>admin@gmail.com</span> and password: <span className='text-primary'>admin</span> <br/>
-            Designed By <a href="https://t.me/uixnature">Uix Nature</a> &
-            Developed By <a href="https://github.com/Reaclate">Reaclate</a>
-        </p>
-        </div>
-        
+           
         </div>
     );
 }
