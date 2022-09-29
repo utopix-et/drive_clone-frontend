@@ -1,19 +1,23 @@
 import React from 'react';
 import homeillust from '../assets/images/undraw_my_files_swob.svg';
+import tibeb from '../assets/images/tibeb2.png';
 
 export const Home = () => {
     return (
-        <div className='container bg-white mt-4'>
+        <div className='container bg-white py-3'>
 
-            <div className='row mt-5'>
-                <div className='col-12 col-md-8 mt-5 py-5'>
-                    <h1 className='text-black' style={{fontSize:'40px'}}>Welcome to Google Drive Clone</h1>
-                    <p className='text-secondary' style={{fontSize:'20px'}}>Store, share and access your files from anywhere</p>
-                    <p className='text-secondary' style={{fontSize:'20px'}}>Create an Account to get a free Cloud storage</p>
-                    <button type='submit' className='border-0 rounded px-3 py-2 text-white mt-4 w-25' style={{backgroundColor:'#FF8800'}}>Get Started</button>
+            <div className='row py-4'>
+                <img src={tibeb} alt="tibeb" height={150}  />
+            
+                <div className='col-12 col-md-6 mt-3'>
+                    <img src={homeillust} alt='drive' className='img-fluid mt-3 pe-5'/>
                 </div>
-                <div className='col-12 col-md-4 mt-5'>
-                    <img src={homeillust} alt='drive' className='img-fluid mt-5' />
+
+                <div className='col-12 col-md-6 mt-3 py-5'>
+                    <h1 className='text-black' style={{fontSize:'40px'}}>Welcome to Google Drive Clone</h1>
+                    <p className='text-secondary mt-4' style={{fontSize:'18px'}}>Store, share and access your files from anywhere</p>
+                    <p className='text-secondary' style={{fontSize:'18px'}}>Create an Account to get a free Cloud storage</p>
+                    <button type='submit' className='border-0 rounded px-3 py-2 text-white mt-4 w-50' style={{backgroundColor:'#FF8800'}}>Get Started</button>
                 </div>
             </div>
 

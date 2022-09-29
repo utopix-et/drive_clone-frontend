@@ -21,7 +21,7 @@ export const  Navbar = () => {
            <a type='submit' className='text-decoration-none text-secondary'>Login</a>
            </div>
            <div className='w-100 text-center btn border-none rounded' style={{backgroundColor:'#FF8800'}}>
-           <a type='submit' className='text-white text-decoration-none' >Signup</a>
+           <a type='submit' className='text-white text-decoration-none' >Sign Up</a>
         </div>
         </div>
     </nav>

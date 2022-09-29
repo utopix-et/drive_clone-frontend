@@ -28,7 +28,7 @@ export default function Login() {
                 <img src={illust} alt='illust' className='illustrator' width={500} height={500}/>
             </div>
 
-            <div className='col-sm-6 mt-5'>
+            <div className='col-sm-6 mt-5 py-5'>
                <div className='header text-decoration-underline'>
                     <h4>Login</h4>
                 </div>
