@@ -58,6 +58,20 @@ export const MainStorage = () => {
                             </div>
                             </div>
 
+                            <div className='mt-2 me-2'>
+                            <button className='btn text-secondary'>
+                            <img src={Trash} alt='Trash' width='20' height='20' className='me-2'/>
+                            Delete
+                            </button>
+                            </div>
+
+                            <div className='mt-2 me-1'>
+                            <button className='btn text-secondary'>
+                            <img src={Trash} alt='Trash' width='20' height='20' className='me-2'/>
+                            Move
+                            </button>
+                            </div>
+
                 </div> 
             </div>   
         </div>
