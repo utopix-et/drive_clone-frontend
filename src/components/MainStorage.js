@@ -1,6 +1,7 @@
 import React from 'react';
 import Mydrive from '../assets/images/network-drive.svg';
 import Trash from '../assets/images/trash.svg';
+import Storage from '../assets/images/storage.svg';
 
 export const MainStorage = () => {
     return (   
@@ -27,18 +28,34 @@ export const MainStorage = () => {
                             Create New folder
                                 </button>
 
-                            <div className='mt-1'>
+                            <div className='mt-1 ms-2'>
                             <button className='btn text-secondary mt-3'>
-                            <img src={Mydrive} alt='mydrive' width='20' height='20' className='me-1'/>
-                            My Drive
+                            <img src={Mydrive} alt='mydrive' width='20' height='20'/>
+                            <p className='d-inline ps-2'>My Drive</p>
                             </button>
                             </div>
                             
                             <div className='mt-2 me-4'>
                             <button className='btn text-secondary'>
-                            <img src={Trash} alt='mydrive' width='20' height='20' className='me-1'/>
+                            <img src={Trash} alt='Trash' width='20' height='20' className='me-2'/>
                             Trash
                             </button>
+                            </div>
+
+                            <div className='mt-2 me-2 ms-1'>
+                            <button className='btn text-secondary'>
+                            <img src={Storage} alt='Storage' width='20' height='20' className='me-2'/>
+                           Storage
+                            </button>
+                            </div>
+
+                            <div className='mt-2 me-2 ms-1 w-75 text-center'>
+                            <div class="progress">
+                              <div class="progress-bar w-50" style={{backgroundColor:'#FF9900'}} role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div className='text-secondary mt-2'>
+                            75MB used of 150MB
+                            </div>
                             </div>
 
                 </div> 
