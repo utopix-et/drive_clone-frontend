@@ -45,14 +45,14 @@ export const MainStorage = () => {
             Create New folder
           </button>
 
-          <div className="mt-1 ms-2">
+          <div className="mt-1 ms-4">
             <button className="btn text-secondary mt-3">
               <img src={Mydrive} alt="mydrive" width="20" height="20" />
               <p className="d-inline ps-2">My Drive</p>
             </button>
           </div>
 
-          <div className="mt-2 me-4">
+          <div className="mt-2 ms-4">
             <button className="btn text-secondary">
               <img
                 src={Trash}
@@ -65,7 +65,7 @@ export const MainStorage = () => {
             </button>
           </div>
 
-          <div className="mt-2 me-2 ms-1">
+          <div className="mt-2 ms-4">
             <button className="btn text-secondary">
               <img
                 src={Storage}
@@ -78,7 +78,7 @@ export const MainStorage = () => {
             </button>
           </div>
 
-          <div className="mt-2 me-2 ms-1 w-75 text-center">
+          <div className="mt-2 me-2 w-75 text-center">
             <div class="progress">
               <div
                 class="progress-bar w-50"
@@ -92,7 +92,7 @@ export const MainStorage = () => {
             <div className="text-secondary mt-2">75MB used of 150MB</div>
           </div>
 
-          <div className="mt-2 me-2">
+          <div className="mt-2 ms-4">
             <button className="btn text-secondary">
               <img
                 src={Trash}
@@ -105,7 +105,7 @@ export const MainStorage = () => {
             </button>
           </div>
 
-          <div className="mt-2 me-1">
+          <div className="mt-2 ms-4">
             <button className="btn text-secondary">
               <img
                 src={Trash}
