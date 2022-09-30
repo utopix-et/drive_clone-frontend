@@ -9,7 +9,7 @@ export const MainStorage = () => {
       <div className="row mt-5">
         <div className="col-sm-12 col-md-3">
           <button
-            className="btn text-white mt-3"
+            className="btn text-white mt-3 me-5"
             style={{ backgroundColor: "#FF9900" }}
           >
             <span className="pe-3">
