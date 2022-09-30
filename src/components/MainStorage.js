@@ -2,6 +2,7 @@ import React from "react";
 import Mydrive from "../assets/images/network-drive.svg";
 import Trash from "../assets/images/trash.svg";
 import Storage from "../assets/images/storage.svg";
+import Move from "../assets/images/move.svg";
 
 export const MainStorage = () => {
   return (
@@ -108,7 +109,7 @@ export const MainStorage = () => {
           <div className="mt-2 ms-4">
             <button className="btn text-secondary">
               <img
-                src={Trash}
+                src={Move}
                 alt="Trash"
                 width="20"
                 height="20"
